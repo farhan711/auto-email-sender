@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/preSignedURL",
+            "lambdaFunction": "mainLambda",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/send-email",
+            "lambdaFunction": "mainLambda",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/schedule-email",
+            "lambdaFunction": "mainLambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "emailApi",
+    "apiName": "emailApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mainLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-emailapp-dev-231020-authRole",
+        "unAuthRoleName": "amplify-emailapp-dev-231020-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mainLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "d5409e3a"
+}
