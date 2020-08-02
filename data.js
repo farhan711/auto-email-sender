@@ -1,6 +1,6 @@
 "use strict";
 const MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb+srv://mercury-events:0r8Vh6Aiwjf5LGLt@sequr-development2-qcptx.mongodb.net/test?retryWrites=true&w=majority';
+var url = '';
 
 const MONGODB_URI = url; // or Atlas connection string
 
